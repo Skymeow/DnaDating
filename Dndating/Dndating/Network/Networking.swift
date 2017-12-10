@@ -11,6 +11,7 @@ import Foundation
 enum Route {
     case usersSignup
     case usersLogin
+    case traits
     
     func path() -> String {
         switch self {
@@ -18,6 +19,8 @@ enum Route {
             return "new"
         case .usersLogin:
             return "login"
+        case .traits:
+            return "match"
         default:
             return ""
         }
@@ -29,6 +32,8 @@ enum Route {
             return [:]
         case .usersLogin:
             return [:]
+        case .traits:
+            return [:]
         }
     }
     
@@ -37,6 +42,8 @@ enum Route {
         case .usersSignup:
             return "https://dndate.herokuapp.com/user/"
         case .usersLogin:
+            return "https://dndate.herokuapp.com/user/"
+        case .traits:
             return "https://dndate.herokuapp.com/user/"
         default:
             return ""
@@ -53,6 +60,12 @@ enum Route {
         case .usersLogin:
             let bodyData = try? JSONSerialization.data(withJSONObject: data)
             return bodyData
+        case .traits:
+            let encoder = JSONEncoder()
+            guard let traits = data as? Trait else {return nil}
+            let result = try? encoder.encode(traits)
+            print(result)
+            return result
         default:
             return nil
         }
@@ -84,6 +97,7 @@ class Networking {
         var request = URLRequest(url: toURL)
 //        let bodyData = try? JSONSerialization.data(withJSONObject: data)
         request.httpBody = route.body(data: data)
+        print(request.httpBody)
         request.allHTTPHeaderFields = headers
         request.httpMethod = method
         
@@ -92,6 +106,7 @@ class Networking {
             guard let responseCode = response as? HTTPURLResponse else {return}
             let statusCode = responseCode.statusCode
             guard let data = data else { return }
+            print(data)
 //            let parsedData = try? JSONSerialization.jsonObject(with: request.httpBody!, options: .allowFragments)
 //            print(parsedData)
             completion(data, statusCode)

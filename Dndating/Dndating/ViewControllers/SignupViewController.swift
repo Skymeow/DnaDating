@@ -37,9 +37,9 @@ class SignupViewController: UIViewController {
                  UserDefaults.standard.set(true, forKey: "isUserLoggedIn")
                 UserDefaults.standard.set(true, forKey: "isUserSignedup")
                 let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-                let firstPageVC = storyBoard.instantiateViewController(withIdentifier: "toFirstPage") as! FirstPageViewController
+                let PageVC = storyBoard.instantiateViewController(withIdentifier: "pageVC") as! PageViewController
                 DispatchQueue.main.async {
-                    self.present(firstPageVC, animated: true, completion: nil)
+                    self.present(PageVC, animated: true, completion: nil)
                 }
             }
         }

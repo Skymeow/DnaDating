@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if userLoggedIn == true
         {
             let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
-            let initialViewController = storyboard.instantiateViewController(withIdentifier: "toFirstPage")
+            let initialViewController = storyboard.instantiateViewController(withIdentifier: "pageVC") as! PageViewController
             self.window?.rootViewController =  initialViewController
             self.window?.makeKeyAndVisible()
         }

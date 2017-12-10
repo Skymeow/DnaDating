@@ -13,58 +13,65 @@ import UIKit
 class PageViewController: UIPageViewController {
     
     override func viewDidLoad() {
-        dataSource = self as! UIPageViewControllerDataSource
+        dataSource = self 
         delegate = self
         
         setViewControllers([getStepOne()], direction: .forward, animated: true, completion: nil)
     }
     
-//    func getStepOne() -> OrganToFoodViewController {
-//        return storyboard!.instantiateViewController(withIdentifier: "StepOne") as! OrganToFoodViewController
-//    }
-//    
-//    func getStepTwo() -> StepTwo {
-//        return storyboard!.instantiateViewController(withIdentifier: "StepTwo") as! StepTwo
-//    }
-//    
-//    override var prefersStatusBarHidden: Bool {
-//        return true
-//    }
-//}
+    func getStepOne() -> AppearanceViewController {
+        return storyboard!.instantiateViewController(withIdentifier: "appearanceVC") as! AppearanceViewController
+    }
+
+    func getStepTwo() -> PersonalityViewController {
+        return storyboard!.instantiateViewController(withIdentifier: "personalityVC") as! PersonalityViewController
+    }
+
+    func getStepThree() -> SubmitViewController {
+        return storyboard!.instantiateViewController(withIdentifier: "submitVC") as! SubmitViewController
+    }
+
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+}
 //
 //// MARK: - UIPageViewControllerDataSource methods
 //
-//extension OnboardingPageViewController: UIPageViewControllerDataSource {
-//    
-//    func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
-//        if viewController is StepTwo {
-//            // 2 -> 1
-//            return getStepOne()
-//        } else {
-//            
-//            return nil
-//        }
-//    }
-//    
-//    func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
-//        if viewController is OrganToFoodViewController {
-//            // 1 -> 2
-//            return getStepTwo()
-//        } else {
-//            // 0 -> end of the road
-//            return nil
-//        }
-//    }
-//    
-//    // Enables pagination dots
-//    func presentationCountForPageViewController(pageViewController: UIPageViewController) -> Int {
-//        return 2
-//    }
-//    
-//    // This only gets called once, when setViewControllers is called
-//    func presentationIndexForPageViewController(pageViewController: UIPageViewController) -> Int {
-//        return 0
-//    }
+extension PageViewController: UIPageViewControllerDataSource {
+
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
+        if viewController is PersonalityViewController {
+            // 2 -> 1
+            return getStepOne()
+        } else if viewController is SubmitViewController {
+            return getStepTwo()
+        } else {
+            return nil
+        }
+    }
+
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
+        if viewController is AppearanceViewController {
+            // 1 -> 2
+//            AppearanceViewController.motionData =
+            return getStepTwo()
+        } else if viewController is PersonalityViewController {
+            return getStepThree()
+        } else {
+            return nil
+        }
+    }
+
+    // Enables pagination dots
+    func presentationCountForPageViewController(pageViewController: UIPageViewController) -> Int {
+        return 3
+    }
+
+    // This only gets called once, when setViewControllers is called
+    func presentationIndexForPageViewController(pageViewController: UIPageViewController) -> Int {
+        return 0
+    }
     
 }
 

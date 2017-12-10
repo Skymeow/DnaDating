@@ -35,9 +35,9 @@ class LoginViewController: UIViewController {
             if response == 200 {
                 self.defaults.set(true, forKey: "isUserLoggedIn")
                 let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-                let firstPageVC = storyBoard.instantiateViewController(withIdentifier: "toFirstPage") as! FirstPageViewController
-                DispatchQueue.main.async{
-                    self.present(firstPageVC, animated: true, completion: nil)
+                let PageVC = storyBoard.instantiateViewController(withIdentifier: "pageVC") as! PageViewController
+                DispatchQueue.main.async {
+                    self.present(PageVC, animated: true, completion: nil)
                 }
             } else {
                 DispatchQueue.main.async {

@@ -15,9 +15,17 @@
 		F9D1F4F31FDC943C0051CC29 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D1F4F21FDC943C0051CC29 /* SignupViewController.swift */; };
 		F9D1F4F61FDC99B20051CC29 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D1F4F51FDC99B20051CC29 /* Networking.swift */; };
 		F9D1F4F91FDC9C560051CC29 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D1F4F81FDC9C560051CC29 /* User.swift */; };
-		F9D1F4FC1FDC9EBC0051CC29 /* FirstPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D1F4FB1FDC9EBC0051CC29 /* FirstPageViewController.swift */; };
+		F9D1F4FC1FDC9EBC0051CC29 /* AppearanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D1F4FB1FDC9EBC0051CC29 /* AppearanceViewController.swift */; };
 		F9D1F4FE1FDC9FC50051CC29 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D1F4FD1FDC9FC50051CC29 /* LoginViewController.swift */; };
 		F9D1F5001FDCBCE00051CC29 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D1F4FF1FDCBCE00051CC29 /* PageViewController.swift */; };
+		F9D1F5021FDD9B2D0051CC29 /* PersonalityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D1F5011FDD9B2D0051CC29 /* PersonalityViewController.swift */; };
+		F9D1F5041FDDA4530051CC29 /* SubmitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D1F5031FDDA4530051CC29 /* SubmitViewController.swift */; };
+		F9D1F5061FDDA9870051CC29 /* Traits.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D1F5051FDDA9870051CC29 /* Traits.swift */; };
+		F9D1F5091FDDB6E40051CC29 /* Traits.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F9D1F5071FDDB6E40051CC29 /* Traits.xcdatamodeld */; };
+		F9D1F50B1FDDB9E40051CC29 /* CoredataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D1F50A1FDDB9E40051CC29 /* CoredataStack.swift */; };
+		F9D1F50D1FDDE7BC0051CC29 /* Matched.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D1F50C1FDDE7BC0051CC29 /* Matched.swift */; };
+		F9D1F5111FDDF1500051CC29 /* MatchedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D1F5101FDDF1500051CC29 /* MatchedViewController.swift */; };
+		F9D1F5131FDDF69F0051CC29 /* MatchedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D1F5121FDDF69F0051CC29 /* MatchedCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,9 +39,17 @@
 		F9D1F4F21FDC943C0051CC29 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		F9D1F4F51FDC99B20051CC29 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		F9D1F4F81FDC9C560051CC29 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		F9D1F4FB1FDC9EBC0051CC29 /* FirstPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPageViewController.swift; sourceTree = "<group>"; };
+		F9D1F4FB1FDC9EBC0051CC29 /* AppearanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceViewController.swift; sourceTree = "<group>"; };
 		F9D1F4FD1FDC9FC50051CC29 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Dndating/ViewControllers/LoginViewController.swift; sourceTree = SOURCE_ROOT; };
-		F9D1F4FF1FDCBCE00051CC29 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PageViewController.swift; path = ViewControllers/PageViewController.swift; sourceTree = "<group>"; };
+		F9D1F4FF1FDCBCE00051CC29 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		F9D1F5011FDD9B2D0051CC29 /* PersonalityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalityViewController.swift; sourceTree = "<group>"; };
+		F9D1F5031FDDA4530051CC29 /* SubmitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitViewController.swift; sourceTree = "<group>"; };
+		F9D1F5051FDDA9870051CC29 /* Traits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Traits.swift; sourceTree = "<group>"; };
+		F9D1F5081FDDB6E40051CC29 /* Traits.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Traits.xcdatamodel; sourceTree = "<group>"; };
+		F9D1F50A1FDDB9E40051CC29 /* CoredataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoredataStack.swift; sourceTree = "<group>"; };
+		F9D1F50C1FDDE7BC0051CC29 /* Matched.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matched.swift; sourceTree = "<group>"; };
+		F9D1F5101FDDF1500051CC29 /* MatchedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedViewController.swift; sourceTree = "<group>"; };
+		F9D1F5121FDDF69F0051CC29 /* MatchedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +85,8 @@
 				F9D1F4DE1FDC92780051CC29 /* AppDelegate.swift */,
 				F9D1F4F41FDC94530051CC29 /* ViewControllers */,
 				F9D1F4E21FDC92780051CC29 /* Main.storyboard */,
-				F9D1F4FF1FDCBCE00051CC29 /* PageViewController.swift */,
+				F9D1F5121FDDF69F0051CC29 /* MatchedCell.swift */,
+				F9D1F50A1FDDB9E40051CC29 /* CoredataStack.swift */,
 				F9D1F4F71FDC99C10051CC29 /* Network */,
 				F9D1F4FA1FDC9C830051CC29 /* Model */,
 				F9D1F4E51FDC92780051CC29 /* Assets.xcassets */,
@@ -82,10 +99,15 @@
 		F9D1F4F41FDC94530051CC29 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				F9D1F4FF1FDCBCE00051CC29 /* PageViewController.swift */,
+				F9D1F5071FDDB6E40051CC29 /* Traits.xcdatamodeld */,
 				F9D1F4E01FDC92780051CC29 /* ViewController.swift */,
 				F9D1F4F21FDC943C0051CC29 /* SignupViewController.swift */,
-				F9D1F4FB1FDC9EBC0051CC29 /* FirstPageViewController.swift */,
+				F9D1F4FB1FDC9EBC0051CC29 /* AppearanceViewController.swift */,
 				F9D1F4FD1FDC9FC50051CC29 /* LoginViewController.swift */,
+				F9D1F5031FDDA4530051CC29 /* SubmitViewController.swift */,
+				F9D1F5011FDD9B2D0051CC29 /* PersonalityViewController.swift */,
+				F9D1F5101FDDF1500051CC29 /* MatchedViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -101,7 +123,9 @@
 		F9D1F4FA1FDC9C830051CC29 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F9D1F50C1FDDE7BC0051CC29 /* Matched.swift */,
 				F9D1F4F81FDC9C560051CC29 /* User.swift */,
+				F9D1F5051FDDA9870051CC29 /* Traits.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -179,12 +203,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9D1F4FE1FDC9FC50051CC29 /* LoginViewController.swift in Sources */,
-				F9D1F4FC1FDC9EBC0051CC29 /* FirstPageViewController.swift in Sources */,
+				F9D1F4FC1FDC9EBC0051CC29 /* AppearanceViewController.swift in Sources */,
+				F9D1F5131FDDF69F0051CC29 /* MatchedCell.swift in Sources */,
+				F9D1F5091FDDB6E40051CC29 /* Traits.xcdatamodeld in Sources */,
 				F9D1F4F31FDC943C0051CC29 /* SignupViewController.swift in Sources */,
+				F9D1F50D1FDDE7BC0051CC29 /* Matched.swift in Sources */,
+				F9D1F5021FDD9B2D0051CC29 /* PersonalityViewController.swift in Sources */,
+				F9D1F5061FDDA9870051CC29 /* Traits.swift in Sources */,
 				F9D1F4E11FDC92780051CC29 /* ViewController.swift in Sources */,
 				F9D1F4DF1FDC92780051CC29 /* AppDelegate.swift in Sources */,
+				F9D1F5041FDDA4530051CC29 /* SubmitViewController.swift in Sources */,
 				F9D1F4F91FDC9C560051CC29 /* User.swift in Sources */,
+				F9D1F50B1FDDB9E40051CC29 /* CoredataStack.swift in Sources */,
 				F9D1F4F61FDC99B20051CC29 /* Networking.swift in Sources */,
+				F9D1F5111FDDF1500051CC29 /* MatchedViewController.swift in Sources */,
 				F9D1F5001FDCBCE00051CC29 /* PageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -370,6 +402,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F9D1F5071FDDB6E40051CC29 /* Traits.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F9D1F5081FDDB6E40051CC29 /* Traits.xcdatamodel */,
+			);
+			currentVersion = F9D1F5081FDDB6E40051CC29 /* Traits.xcdatamodel */;
+			path = Traits.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F9D1F4D31FDC92780051CC29 /* Project object */;
 }
